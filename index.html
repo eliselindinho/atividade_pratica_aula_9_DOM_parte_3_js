@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade Prática - Aula 9 - DOM PARTE 3</title>
+    <style>
+      #cadastroPessoa {
+        width: max-content;
+        padding: 20px 20px;
+        background-color: aqua;
+        justify-content: center;
+      }
+      h1 {
+        color: violet;
+        text-align: center;
+      }
+      #formularioCadastro {
+        text-align: justify;
+        padding: 20px 20px 20px 20px;
+      }
+      .descricaoInput {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        width: 100%;
+        color: blue;
+      }
+
+      .preencherInput {
+        border: 1px solid;
+        border-radius: 5px;
+        border-color: blue;
+        width: 100%;
+        padding: 20px 30px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        text-align: center;
+        margin-bottom: 20px;
+        border: 1px solid;
+        border-radius: 5px;
+        border-color: blue;
+        width: 100%;
+        height: 50px;
+        color: #ac0dc4;
+        background-color: blue;
+        font-style: normal;
+        font-size: larger;
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cadastroPessoa">
+      <div class="cadastroSimples">
+        <h1>Cadastro Simples</h1>
+      </div>
+      <div id="formularioCadastro">
+        <form>
+          <label class="descricaoInput">Nome</label><br />
+          <input
+            class="preencherInput"
+            name="Nome"
+            id="cadastroNome"
+            type="text"
+            placeholder="Digite nome"
+          /><br />
+          <label class="descricaoInput">Sobrenome</label><br />
+          <input
+            class="preencherInput"
+            name="Sobrenome"
+            id="cadastroSobrenome"
+            type="text"
+            placeholder="Digite sobrenome"
+          /><br />
+          <label class="descricaoInput">CPF</label><br />
+          <input
+            class="preencherInput"
+            name="cpf"
+            id="cpfCadastro"
+            type="number"
+            placeholder="Digite cpf"
+          /><br /><br />
+          <button id="botao" type="button">Validar</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./dom3.js"></script>
+</html>
